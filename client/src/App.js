@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CreateToDo from "./components/CreateToDo";
 import ToDo from "./components/ToDo";
 
 function App() {
   const [entries, setEntries] = useState([]);
+
+  useEffect(() => {
+    const savedEntries = JSON.parse(localStorage.getItem("tasks"));
+    if (savedEntries) {
+      setEntries(savedEntries);
+    };
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(entries));
+  }, [entries]);
 
   return (
     <div>
@@ -11,8 +22,9 @@ function App() {
       <CreateToDo setEntries={setEntries} entries={entries} />
       {entries.map((entry) => (
         <ToDo
-          task={entry}
-          key={entry}
+          task={entry.entry}
+          id={entry.id}
+          key={entry.id}
           entries={entries}
           setEntries={setEntries}
         />

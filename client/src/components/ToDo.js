@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Update from "./Update";
 
-function ToDo({ task, entries, setEntries }) {
+function ToDo({ task, id, entries, setEntries }) {
   const [show, setShow] = useState(false);
   const [entry, setEntry] = useState(task);
   const [color, setColor] = useState("darkblue");
+
+  useEffect(() => {
+    let updatedEntries = [];
+    entries.forEach(task => {
+        if (task.id === id) {
+            task.entry = entry;
+        };
+        updatedEntries.push(task);
+    });
+    setEntries(updatedEntries);
+  }, [entry]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -28,7 +39,7 @@ function ToDo({ task, entries, setEntries }) {
   };
 
   const handleDelete = () => {
-    const remainingEntries = entries.filter((entry) => entry !== task);
+    const remainingEntries = entries.filter((entry) => entry.id !== id);
     setEntries(remainingEntries);
   };
 
