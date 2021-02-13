@@ -15,7 +15,7 @@ function ToDo({ task, entries, setEntries }) {
   };
   const unChecked = {
     class: "far fa-square",
-    color: "red",
+    color: "rgb(187, 31, 31)",
   };
   const [checkbox, setCheckbox] = useState(unChecked);
 
@@ -43,7 +43,7 @@ function ToDo({ task, entries, setEntries }) {
   const styles = {
     toDo: {
       border: "1px solid black",
-      width: "40vw",
+      width: "50vw",
       height: "60px",
       margin: "0 auto",
       marginTop: "2vh",
