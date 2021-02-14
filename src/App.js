@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-center">To Do List</h1>
+      <h3 className="text-center">To Do List</h3>
       <CreateToDo setEntries={setEntries} entries={entries} />
       {entries.map((entry) => (
         <ToDo

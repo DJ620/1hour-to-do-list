@@ -62,8 +62,8 @@ function ToDo({ task, done, id, entries, setEntries }) {
   const styles = {
     toDo: {
       border: "1px solid black",
-      width: "50vw",
-      height: "60px",
+      width: "75vw",
+      minHeight: "60px",
       margin: "0 auto",
       marginTop: "2vh",
       backgroundColor: `${checkbox.color}`,
@@ -81,14 +81,14 @@ function ToDo({ task, done, id, entries, setEntries }) {
   };
   return (
     <div style={styles.toDo} className="row">
-      <div className="col-1">
+      <div className="col-2 col-md-1">
         <span
           className="far fa-trash-alt"
           style={styles.checkbox}
           onClick={handleDelete}
         />
       </div>
-      <div className="col-10">
+      <div className="col-8 col-md-10">
         <p
           className="text-center"
           onClick={handleShow}
@@ -99,7 +99,7 @@ function ToDo({ task, done, id, entries, setEntries }) {
           {entry}
         </p>
       </div>
-      <div className="col-1">
+      <div className="col-2 col-md-1">
         <span
           className={checkbox.class}
           style={styles.checkbox}
