@@ -17,7 +17,7 @@ function CreateToDo({setEntries, entries}) {
             textAlign: "center"
         },
         input: {
-            width: "600px",
+            width: "50vw",
             margin: "0 auto"
         }
     };
