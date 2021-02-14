@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/DJ620/1hour-to-do-list/static/js/main.cdf8b0cf.chunk.js",
-    "main.js.map": "/DJ620/1hour-to-do-list/static/js/main.cdf8b0cf.chunk.js.map",
+    "main.js": "/DJ620/1hour-to-do-list/static/js/main.e0441546.chunk.js",
+    "main.js.map": "/DJ620/1hour-to-do-list/static/js/main.e0441546.chunk.js.map",
     "runtime-main.js": "/DJ620/1hour-to-do-list/static/js/runtime-main.5dc74466.js",
     "runtime-main.js.map": "/DJ620/1hour-to-do-list/static/js/runtime-main.5dc74466.js.map",
     "static/js/2.5f6756cf.chunk.js": "/DJ620/1hour-to-do-list/static/js/2.5f6756cf.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.5dc74466.js",
     "static/js/2.5f6756cf.chunk.js",
-    "static/js/main.cdf8b0cf.chunk.js"
+    "static/js/main.e0441546.chunk.js"
   ]
 }
