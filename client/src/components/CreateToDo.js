@@ -7,7 +7,7 @@ function CreateToDo({setEntries, entries}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         const id = uuidv4();
-        const newEntry = { entry, id };
+        const newEntry = { entry, id, done: false };
         setEntries([...entries, newEntry]);
         setEntry("");
     };

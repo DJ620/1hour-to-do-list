@@ -23,6 +23,7 @@ function App() {
       {entries.map((entry) => (
         <ToDo
           task={entry.entry}
+          done={entry.done}
           id={entry.id}
           key={entry.id}
           entries={entries}

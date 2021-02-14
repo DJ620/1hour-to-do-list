@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Update from "./Update";
 
-function ToDo({ task, id, entries, setEntries }) {
+function ToDo({ task, done, id, entries, setEntries }) {
   const [show, setShow] = useState(false);
   const [entry, setEntry] = useState(task);
   const [color, setColor] = useState("darkblue");
 
   useEffect(() => {
     let updatedEntries = [];
-    entries.forEach(task => {
-        if (task.id === id) {
-            task.entry = entry;
-        };
-        updatedEntries.push(task);
+    entries.forEach((task) => {
+      if (task.id === id) {
+        task.entry = entry;
+      }
+      updatedEntries.push(task);
     });
     setEntries(updatedEntries);
   }, [entry]);
@@ -28,7 +28,7 @@ function ToDo({ task, id, entries, setEntries }) {
     class: "far fa-square",
     color: "rgb(187, 31, 31)",
   };
-  const [checkbox, setCheckbox] = useState(unChecked);
+  const [checkbox, setCheckbox] = useState(done ? checked : unChecked);
 
   const handleCheckbox = () => {
     if (checkbox.color === unChecked.color) {
@@ -36,6 +36,14 @@ function ToDo({ task, id, entries, setEntries }) {
     } else {
       setCheckbox(unChecked);
     }
+    let updatedEntries = [];
+    entries.forEach((task) => {
+      if (task.id === id) {
+        task.done = !task.done;
+      }
+      updatedEntries.push(task);
+    });
+    setEntries(updatedEntries);
   };
 
   const handleDelete = () => {
