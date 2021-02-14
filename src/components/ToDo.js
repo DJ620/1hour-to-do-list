@@ -69,7 +69,8 @@ function ToDo({ task, done, id, entries, setEntries }) {
       backgroundColor: `${checkbox.color}`,
       color: "darkblue",
       paddingTop: "17px",
-      boxShadow: "1px 1px 15px -3px black"
+      boxShadow: "1px 1px 15px -3px black",
+      borderRadius: "15px"
     },
     checkbox: {
       fontSize: "25px",
@@ -100,7 +101,7 @@ function ToDo({ task, done, id, entries, setEntries }) {
           {entry}
         </p>
       </div>
-      <div className="col-2 col-md-1">
+      <div className="col-2 col-md-1 text-right">
         <span
           className={checkbox.class}
           style={styles.checkbox}
