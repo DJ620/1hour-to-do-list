@@ -18,7 +18,11 @@ function CreateToDo({setEntries, entries}) {
         },
         input: {
             width: "50vw",
-            margin: "0 auto"
+            margin: "0 auto",
+            boxShadow: "1px 1px 15px -8px black"
+        },
+        button: {
+          boxShadow: "1px 1px 15px -5px black"
         }
     };
 
@@ -35,7 +39,7 @@ function CreateToDo({setEntries, entries}) {
             onChange={(e) => setEntry(e.target.value)}
           />
       </div>
-      <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Add to list</button>
+      <button type="submit" className="btn btn-primary" style={styles.button} onClick={handleSubmit}>Add to list</button>
     </form>
   );
 }
