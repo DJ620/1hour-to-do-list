@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/DJ620/1hour-to-do-list/static/js/main.cdf8b0cf.chunk.js",
+    "main.js.map": "/DJ620/1hour-to-do-list/static/js/main.cdf8b0cf.chunk.js.map",
+    "runtime-main.js": "/DJ620/1hour-to-do-list/static/js/runtime-main.5dc74466.js",
+    "runtime-main.js.map": "/DJ620/1hour-to-do-list/static/js/runtime-main.5dc74466.js.map",
+    "static/js/2.5f6756cf.chunk.js": "/DJ620/1hour-to-do-list/static/js/2.5f6756cf.chunk.js",
+    "static/js/2.5f6756cf.chunk.js.map": "/DJ620/1hour-to-do-list/static/js/2.5f6756cf.chunk.js.map",
+    "index.html": "/DJ620/1hour-to-do-list/index.html",
+    "static/js/2.5f6756cf.chunk.js.LICENSE.txt": "/DJ620/1hour-to-do-list/static/js/2.5f6756cf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dc74466.js",
+    "static/js/2.5f6756cf.chunk.js",
+    "static/js/main.cdf8b0cf.chunk.js"
+  ]
+}
