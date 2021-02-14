@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CreateToDo from "./components/CreateToDo";
 import ToDo from "./components/ToDo";
+import "./App.css";
 
 function App() {
   const [entries, setEntries] = useState([]);

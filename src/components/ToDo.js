@@ -69,6 +69,7 @@ function ToDo({ task, done, id, entries, setEntries }) {
       backgroundColor: `${checkbox.color}`,
       color: "darkblue",
       paddingTop: "17px",
+      boxShadow: "1px 1px 15px -3px black"
     },
     checkbox: {
       fontSize: "25px",
